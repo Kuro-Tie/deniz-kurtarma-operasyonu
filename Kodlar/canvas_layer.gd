@@ -50,10 +50,6 @@ func _on_spawn_timer_timeout():
 	print(olusturucu_timer.wait_time)
 	olusturucu_timer.start()
 
-	
-	
-
-
 func _ana_ekrana_don():
 	SkorVeBar.yuzde = 0
 	SkorVeBar.skor = 0

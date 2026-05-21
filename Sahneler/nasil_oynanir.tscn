@@ -27,6 +27,7 @@ Farkındalık oluşturan oyunumuzu oynadığınız
 için teşekkür ederiz. Dikkatli olun eğer denizler
 çok kirlenirse skorunuz ortaya çıkar bakalım 
 kim daha çok denizleri seviyor?"
+horizontal_alignment = 1
 
 [node name="AnaEkran" type="Button" parent="." unique_id=1216457537]
 layout_mode = 1
