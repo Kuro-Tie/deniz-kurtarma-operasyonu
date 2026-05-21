@@ -137,6 +137,17 @@ grow_horizontal = 0
 grow_vertical = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_vwcll")
 theme_override_styles/fill = SubResource("StyleBoxFlat_jgrr6")
+max_value = 28.0
+step = 1.0
+fill_mode = 3
+
+[node name="Skor" type="Label" parent="Ekran" unique_id=1430142298]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0.77254903, 1, 1)
+theme_override_font_sizes/font_size = 31
+text = "Denizleri Kurtarma Skoru = 0"
 
 [node name="OlusturucuZaman" type="Timer" parent="." unique_id=1144213637]
 wait_time = 2.0
