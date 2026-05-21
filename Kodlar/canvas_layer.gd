@@ -3,7 +3,7 @@ extends CanvasLayer
 @export var sise_sahnesi: PackedScene = preload("res://Sahneler/sise.tscn")
 
 # Script zaten CanvasLayer'a bağlı olduğu için doğrudan altındaki düğümlere ulaşabiliriz:
-@onready var sise_izgarasi = $Control/MarginContainer/VBoxContainer/SiseIzgarasi
+@onready var sise_izgarasi = $Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi
 @onready var olusturucu_timer = $OlusturucuZaman
 
 func _ready():

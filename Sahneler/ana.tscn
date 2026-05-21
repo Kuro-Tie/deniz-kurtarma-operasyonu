@@ -2,10 +2,16 @@
 
 [ext_resource type="Script" uid="uid://b4kfx6ssp3ehh" path="res://Kodlar/canvas_layer.gd" id="1_vwcll"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vwcll"]
+bg_color = Color(0.38003126, 0.81224537, 0.4787404, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jgrr6"]
+bg_color = Color(0, 0.77254903, 1, 1)
+
 [node name="Ana" type="CanvasLayer" unique_id=455057256]
 script = ExtResource("1_vwcll")
 
-[node name="Control" type="Control" parent="." unique_id=301110897]
+[node name="Ekran" type="Control" parent="." unique_id=301110897]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -13,7 +19,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="Control" unique_id=488127780]
+[node name="BoslukVermeKonteynir" type="MarginContainer" parent="Ekran" unique_id=488127780]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -25,99 +31,112 @@ theme_override_constants/margin_top = 50
 theme_override_constants/margin_right = 50
 theme_override_constants/margin_bottom = 50
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer" unique_id=1281258805]
+[node name="DikeyKonteynir" type="VBoxContainer" parent="Ekran/BoslukVermeKonteynir" unique_id=1281258805]
 layout_mode = 2
 
-[node name="SiseIzgarasi" type="GridContainer" parent="Control/MarginContainer/VBoxContainer" unique_id=940269475]
+[node name="SiseIzgarasi" type="GridContainer" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir" unique_id=940269475]
 custom_minimum_size = Vector2(128, 128)
 layout_mode = 2
 theme_override_constants/h_separation = 140
 theme_override_constants/v_separation = 140
 columns = 7
 
-[node name="Yuva1" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=2084395521]
+[node name="Yuva1" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=2084395521]
 layout_mode = 2
 
-[node name="Yuva2" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=879853768]
+[node name="Yuva2" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=879853768]
 layout_mode = 2
 
-[node name="Yuva3" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=1326417030]
+[node name="Yuva3" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=1326417030]
 layout_mode = 2
 
-[node name="Yuva4" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=1588132363]
+[node name="Yuva4" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=1588132363]
 layout_mode = 2
 
-[node name="Yuva5" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=1283836629]
+[node name="Yuva5" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=1283836629]
 layout_mode = 2
 
-[node name="Yuva6" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=857778044]
+[node name="Yuva6" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=857778044]
 layout_mode = 2
 
-[node name="Yuva7" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=826553402]
+[node name="Yuva7" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=826553402]
 layout_mode = 2
 
-[node name="Yuva8" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=1200364915]
+[node name="Yuva8" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=1200364915]
 layout_mode = 2
 
-[node name="Yuva9" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=1462765748]
+[node name="Yuva9" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=1462765748]
 layout_mode = 2
 
-[node name="Yuva10" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=25675495]
+[node name="Yuva10" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=25675495]
 layout_mode = 2
 
-[node name="Yuva11" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=1309535871]
+[node name="Yuva11" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=1309535871]
 layout_mode = 2
 
-[node name="Yuva12" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=2042681929]
+[node name="Yuva12" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=2042681929]
 layout_mode = 2
 
-[node name="Yuva13" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=623104060]
+[node name="Yuva13" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=623104060]
 layout_mode = 2
 
-[node name="Yuva14" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=99518201]
+[node name="Yuva14" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=99518201]
 layout_mode = 2
 
-[node name="Yuva15" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=1682290534]
+[node name="Yuva15" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=1682290534]
 layout_mode = 2
 
-[node name="Yuva16" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=701468790]
+[node name="Yuva16" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=701468790]
 layout_mode = 2
 
-[node name="Yuva17" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=531876969]
+[node name="Yuva17" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=531876969]
 layout_mode = 2
 
-[node name="Yuva18" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=1563633591]
+[node name="Yuva18" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=1563633591]
 layout_mode = 2
 
-[node name="Yuva19" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=283673222]
+[node name="Yuva19" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=283673222]
 layout_mode = 2
 
-[node name="Yuva20" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=598407459]
+[node name="Yuva20" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=598407459]
 layout_mode = 2
 
-[node name="Yuva21" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=72922833]
+[node name="Yuva21" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=72922833]
 layout_mode = 2
 
-[node name="Yuva22" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=348860243]
+[node name="Yuva22" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=348860243]
 layout_mode = 2
 
-[node name="Yuva23" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=280568180]
+[node name="Yuva23" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=280568180]
 layout_mode = 2
 
-[node name="Yuva24" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=1131992928]
+[node name="Yuva24" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=1131992928]
 layout_mode = 2
 
-[node name="Yuva25" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=565866848]
+[node name="Yuva25" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=565866848]
 layout_mode = 2
 
-[node name="Yuva26" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=355399921]
+[node name="Yuva26" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=355399921]
 layout_mode = 2
 
-[node name="Yuva27" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=1780922164]
+[node name="Yuva27" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=1780922164]
 layout_mode = 2
 
-[node name="Yuva28" type="Control" parent="Control/MarginContainer/VBoxContainer/SiseIzgarasi" unique_id=1250712995]
+[node name="Yuva28" type="Control" parent="Ekran/BoslukVermeKonteynir/DikeyKonteynir/SiseIzgarasi" unique_id=1250712995]
 layout_mode = 2
+
+[node name="KirlilikBar" type="ProgressBar" parent="Ekran" unique_id=1798393290]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -4.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_vwcll")
+theme_override_styles/fill = SubResource("StyleBoxFlat_jgrr6")
 
 [node name="OlusturucuZaman" type="Timer" parent="." unique_id=1144213637]
 wait_time = 2.0
