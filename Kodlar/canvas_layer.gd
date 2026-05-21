@@ -8,13 +8,19 @@ extends CanvasLayer
 @onready var kirlilikbar = $Ekran/KirlilikBar
 @onready var Skor = $Ekran/Skor
 func _ready():
+	
 	olusturucu_timer.timeout.connect(_on_spawn_timer_timeout)
-	kirlilikbar.value = 100
-
 
 func _process(_delta):
 	Skor.text = "Denizleri Kurtarma Skoru = " + str(SkorVeBar.skor)
 	kirlilikbar.value = SkorVeBar.yuzde
+	if SkorVeBar.yuzde == 2:
+		_sahneyenile()
+
+func _sahneyenile():
+	SkorVeBar.yuzde = 0
+	get_tree().change_scene_to_file("res://Sahneler/skor_tablo.tscn")
+
 func _on_spawn_timer_timeout():
 	var tum_yuvalar = sise_izgarasi.get_children()
 	var bos_yuvalar = []

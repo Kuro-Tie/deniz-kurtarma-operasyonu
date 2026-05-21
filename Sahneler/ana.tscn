@@ -1,12 +1,13 @@
 [gd_scene format=3 uid="uid://ciib34btlw5sn"]
 
 [ext_resource type="Script" uid="uid://b4kfx6ssp3ehh" path="res://Kodlar/canvas_layer.gd" id="1_vwcll"]
+[ext_resource type="Texture2D" uid="uid://dnai1cnvwl2rp" path="res://varliklar/gokkusagibaligi.svg" id="2_jgrr6"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vwcll"]
-bg_color = Color(0.38003126, 0.81224537, 0.4787404, 1)
+bg_color = Color(0, 0.77254903, 1, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jgrr6"]
-bg_color = Color(0, 0.77254903, 1, 1)
+bg_color = Color(0.38003126, 0.81224537, 0.4787404, 1)
 
 [node name="Ana" type="CanvasLayer" unique_id=455057256]
 script = ExtResource("1_vwcll")
@@ -30,6 +31,142 @@ theme_override_constants/margin_left = 50
 theme_override_constants/margin_top = 50
 theme_override_constants/margin_right = 50
 theme_override_constants/margin_bottom = 50
+
+[node name="ArkaPlanRenk" type="ColorRect" parent="Ekran/BoslukVermeKonteynir" unique_id=912895065]
+layout_mode = 2
+color = Color(0, 0.77254903, 1, 1)
+
+[node name="BalikIzgarasi" type="GridContainer" parent="Ekran/BoslukVermeKonteynir" unique_id=1531675009]
+layout_mode = 2
+columns = 8
+
+[node name="Balik" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=1084995697]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik2" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=627638756]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik3" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=726938689]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik4" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=1528324246]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik5" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=392939569]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik6" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=850329109]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik7" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=1248649787]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik8" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=869788601]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik9" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=1024109026]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik10" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=1769877371]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik11" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=134225651]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik12" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=1998069796]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik13" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=280270378]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik14" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=385887084]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik15" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=1784552871]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik16" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=270625838]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik17" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=1317262689]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik18" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=456926344]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik19" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=1700392932]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik20" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=873180088]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik21" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=470369894]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik22" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=43525159]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik23" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=1889475632]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik24" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=1302593513]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik25" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=74038504]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik26" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=1713519561]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik27" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=1746441844]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik28" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=1512548887]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik29" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=1326520754]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik30" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=1369237432]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik31" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=1990204136]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
+
+[node name="Balik32" type="TextureRect" parent="Ekran/BoslukVermeKonteynir/BalikIzgarasi" unique_id=840601441]
+layout_mode = 2
+texture = ExtResource("2_jgrr6")
 
 [node name="DikeyKonteynir" type="VBoxContainer" parent="Ekran/BoslukVermeKonteynir" unique_id=1281258805]
 layout_mode = 2
@@ -126,7 +263,7 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="KirlilikBar" type="ProgressBar" parent="Ekran" unique_id=1798393290]
-custom_minimum_size = Vector2(50, 0)
+custom_minimum_size = Vector2(40, 0)
 layout_mode = 1
 anchors_preset = 11
 anchor_left = 1.0
@@ -142,9 +279,14 @@ step = 1.0
 fill_mode = 3
 
 [node name="Skor" type="Label" parent="Ekran" unique_id=1430142298]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -215.5
+offset_right = 215.5
+offset_bottom = 44.0
+grow_horizontal = 2
 theme_override_colors/font_color = Color(0, 0.77254903, 1, 1)
 theme_override_font_sizes/font_size = 31
 text = "Denizleri Kurtarma Skoru = 0"

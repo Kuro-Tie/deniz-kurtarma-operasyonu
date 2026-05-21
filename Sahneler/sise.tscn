@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://hhj36xm54ru3"]
 
-[ext_resource type="Texture2D" uid="uid://d2okd1b41quk5" path="res://icon.svg" id="1_jhnuj"]
+[ext_resource type="Texture2D" uid="uid://dl1k7uresrxb7" path="res://varliklar/plastiksise.svg" id="1_jhnuj"]
 [ext_resource type="Script" uid="uid://crv2lbxbtgexy" path="res://Kodlar/sise_buton_kod.gd" id="2_perf6"]
 
 [node name="Sise" type="TextureButton" unique_id=2001981672]
