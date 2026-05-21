@@ -55,6 +55,10 @@ custom_minimum_size = Vector2(128, 60)
 layout_mode = 2
 text = "Nasıl Oynanır?"
 
+[node name="Kolaylastir" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=364965981]
+layout_mode = 2
+text = "Normal Zorluk"
+
 [node name="Zorlastir" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=1957491283]
 custom_minimum_size = Vector2(0, 25)
 layout_mode = 2
@@ -119,5 +123,6 @@ flip_h = true
 
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/OyunaBasla" to="." method="_oyuna_gonder"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/NasilOynanir" to="." method="_on_nasil_oynanir_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Kolaylastir" to="." method="_on_kolaylastir_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Zorlastir" to="." method="_on_zorlastir_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/TamEkran" to="." method="_on_tam_ekran_pressed"]

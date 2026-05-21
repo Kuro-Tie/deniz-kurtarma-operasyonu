@@ -21,5 +21,9 @@ func _on_nasil_oynanir_pressed():
 
 func _on_zorlastir_pressed():
 	SkorVeBar.zorlastir = true
-	SkorVeBar.hizli_Zor = 0.1
+	SkorVeBar.hizli_Zor = 0.3
 	
+
+
+func _on_kolaylastir_pressed():
+	SkorVeBar.zorlastir = false
