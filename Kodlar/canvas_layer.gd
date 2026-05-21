@@ -7,8 +7,9 @@ extends CanvasLayer
 @onready var olusturucu_timer = $OlusturucuZaman
 @onready var kirlilikbar = $Ekran/KirlilikBar
 @onready var Skor = $Ekran/Skor
+@onready var AnaButon = $Ekran/AnaMenu
 func _ready():
-	
+	AnaButon.pressed.connect(_ana_ekrana_don)
 	olusturucu_timer.timeout.connect(_on_spawn_timer_timeout)
 	
 func _process(_delta):
@@ -42,9 +43,18 @@ func _on_spawn_timer_timeout():
 		secilen_yuva.add_child(yeni_sise)
 	SkorVeBar.yuzde += 1
 	olusturucu_timer.stop()
-	olusturucu_timer.wait_time = randf_range(0.1,3.0)
+	if SkorVeBar.zorlastir == false:
+		olusturucu_timer.wait_time = randf_range(0.1,3)
+	else:
+		olusturucu_timer.wait_time = SkorVeBar.hizli_Zor
 	print(olusturucu_timer.wait_time)
 	olusturucu_timer.start()
 
 	
 	
+
+
+func _ana_ekrana_don():
+	SkorVeBar.yuzde = 0
+	SkorVeBar.skor = 0
+	get_tree().change_scene_to_file("res://Sahneler/menu.tscn")

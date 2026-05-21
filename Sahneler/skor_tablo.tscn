@@ -2,6 +2,9 @@
 
 [ext_resource type="Script" uid="uid://baeeq3ul10asi" path="res://Kodlar/skor_tablo.gd" id="1_5ioft"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5ioft"]
+load_path = "res://.godot/imported/gokkusagibaligi.svg-2f7b920318cfcd4558976ea3871fa4ec.ctex"
+
 [node name="SkorTablo" type="Control" unique_id=1666048878]
 layout_mode = 3
 anchors_preset = 15
@@ -27,9 +30,73 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 71
 text = "En Yüksek Skor = 0"
 
-[node name="Timer" type="Timer" parent="." unique_id=507495427]
-wait_time = 10.0
-one_shot = true
-autostart = true
+[node name="OyunaDon" type="Button" parent="." unique_id=1179432320]
+custom_minimum_size = Vector2(500, 50)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -68.0
+offset_top = -31.0
+offset_right = 68.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Denizleri Kurtarmaya Devam"
 
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[node name="Balik1" type="TextureRect" parent="." unique_id=143356124]
+layout_mode = 1
+offset_right = 128.0
+offset_bottom = 128.0
+texture = SubResource("CompressedTexture2D_5ioft")
+
+[node name="Balik3" type="TextureRect" parent="." unique_id=958656088]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -128.0
+offset_right = 128.0
+grow_vertical = 0
+texture = SubResource("CompressedTexture2D_5ioft")
+
+[node name="Balik4" type="TextureRect" parent="." unique_id=1108006185]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -128.0
+offset_top = -128.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = SubResource("CompressedTexture2D_5ioft")
+flip_h = true
+
+[node name="Balik2" type="TextureRect" parent="." unique_id=483396826]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -128.0
+offset_bottom = 128.0
+grow_horizontal = 0
+texture = SubResource("CompressedTexture2D_5ioft")
+flip_h = true
+
+[node name="OyunAd" type="Label" parent="." unique_id=2060806897]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -138.0
+offset_right = 138.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 43
+text = "Minik Yüzgeç Denizleri Temiz İstiyor"
+
+[connection signal="pressed" from="OyunaDon" to="." method="_on_oyuna_don_pressed"]

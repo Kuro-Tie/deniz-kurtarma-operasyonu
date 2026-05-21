@@ -11,6 +11,7 @@ func _ready():
 	
 
 
-func _on_timer_timeout():
+
+func _on_oyuna_don_pressed():
 	SkorVeBar.skor = 0
 	get_tree().change_scene_to_file("res://Sahneler/ana.tscn")

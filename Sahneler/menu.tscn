@@ -1,0 +1,123 @@
+[gd_scene format=3 uid="uid://1t6v7sryn1b7"]
+
+[ext_resource type="Script" uid="uid://dd2eibhuk7f2m" path="res://Kodlar/menu.gd" id="1_7myci"]
+[ext_resource type="Texture2D" uid="uid://dnai1cnvwl2rp" path="res://varliklar/gokkusagibaligi.svg" id="2_gmhtd"]
+[ext_resource type="Texture2D" uid="uid://dl1k7uresrxb7" path="res://varliklar/plastiksise.svg" id="3_wudd6"]
+
+[node name="Menu" type="Control" unique_id=579526065]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7myci")
+
+[node name="OyununAdi" type="Label" parent="." unique_id=1929098880]
+custom_minimum_size = Vector2(300, 90)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -144.0
+offset_right = 144.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 56
+text = "Sevimli Yüzgeç Denizleri Temiz İstiyor"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1923020918]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -109.5
+offset_top = -50.5
+offset_right = 109.5
+offset_bottom = 50.5
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=242190790]
+layout_mode = 2
+theme_override_constants/separation = 19
+
+[node name="OyunaBasla" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=908821190]
+custom_minimum_size = Vector2(128, 60)
+layout_mode = 2
+text = "Denizleri Kurtarmaya Basla"
+
+[node name="NasilOynanir" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=1712658042]
+custom_minimum_size = Vector2(128, 60)
+layout_mode = 2
+text = "Nasıl Oynanır?"
+
+[node name="Zorlastir" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=1957491283]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+text = "Adaletsiz Zorlaştır"
+
+[node name="TamEkran" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=149122975]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+text = "Tam Ekran"
+
+[node name="Balik" type="TextureRect" parent="." unique_id=780421907]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -64.0
+offset_right = 128.0
+offset_bottom = 64.0
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_gmhtd")
+
+[node name="Balik2" type="TextureRect" parent="." unique_id=1664363265]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -128.0
+offset_right = 128.0
+grow_vertical = 0
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_gmhtd")
+
+[node name="Balik3" type="TextureRect" parent="." unique_id=1906866884]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -128.0
+offset_top = -128.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("2_gmhtd")
+flip_h = true
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1325118834]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -20.0
+offset_bottom = 20.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("3_wudd6")
+flip_h = true
+
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/OyunaBasla" to="." method="_oyuna_gonder"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/NasilOynanir" to="." method="_on_nasil_oynanir_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Zorlastir" to="." method="_on_zorlastir_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/TamEkran" to="." method="_on_tam_ekran_pressed"]
