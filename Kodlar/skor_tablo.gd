@@ -7,7 +7,7 @@ func _ready():
 	mevcut_skor = SkorVeBar.skor
 	if mevcut_skor > SkorVeBar.en_yuksek_skor:
 		SkorVeBar.en_yuksek_skor = mevcut_skor
-	skortablosu.text = "En Yüksek Skor = " + str(SkorVeBar.skor)
+	skortablosu.text = "En Yüksek Skor = " + str(SkorVeBar.en_yuksek_skor)
 	
 
 

@@ -10,14 +10,14 @@ extends CanvasLayer
 func _ready():
 	
 	olusturucu_timer.timeout.connect(_on_spawn_timer_timeout)
-
+	
 func _process(_delta):
 	Skor.text = "Denizleri Kurtarma Skoru = " + str(SkorVeBar.skor)
 	kirlilikbar.value = SkorVeBar.yuzde
-	if SkorVeBar.yuzde == 2:
-		_sahneyenile()
+	if SkorVeBar.yuzde == 15:
+		_sahnedegistir()
 
-func _sahneyenile():
+func _sahnedegistir():
 	SkorVeBar.yuzde = 0
 	get_tree().change_scene_to_file("res://Sahneler/skor_tablo.tscn")
 
@@ -41,7 +41,10 @@ func _on_spawn_timer_timeout():
 		
 		secilen_yuva.add_child(yeni_sise)
 	SkorVeBar.yuzde += 1
-	
+	olusturucu_timer.stop()
+	olusturucu_timer.wait_time = randf_range(0.1,3.0)
+	print(olusturucu_timer.wait_time)
+	olusturucu_timer.start()
 
 	
 	
